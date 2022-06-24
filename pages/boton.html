@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Nobia</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="boton.css">
+   
+    <style>
+        body {
+    background-color: #FFCAE3;
+    background-repeat: repeat-x repeat-y;
+    background-size: 250px;
+    background-attachment: fixed;
+    }
+        text{
+            background-color: aqua;
+        }
+    </style>
+    <script>
+        function accionParaCuandoEllaDigaQueSi(){
+            alert('excelente respuesta mibida jsjsjs');
+        }
+
+        function mueveElBoton(){
+            width = window.innerWidth;
+            height = window.innerHeight;
+
+            newWidth = (Math.random() * width);
+            newHeight = (Math.random() * height);
+
+            document.getElementById('btnNo').style.position = "absolute";
+            document.getElementById('btnNo').style.left = newWidth + "px";
+            document.getElementById('btnNo').style.top = newHeight + "px";
+            
+        } 
+    </script>
+   
+<body>
+    <center><h2 class="text">¿Entonces qué?¿si nos casamos?</h2></center>
+    <h4 class="text" align="center">(No intentes darle click en "no" pofavo) </h3>
+    <center><input type="button" onclick="accionParaCuandoEllaDigaQueSi()" id="btnSi" value="Si" />
+    <input type="button" id="btnNo" onmouseover="mueveElBoton()" value="No" /></center>
+    
+</body>
+</html>
