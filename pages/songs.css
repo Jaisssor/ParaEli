@@ -6,7 +6,7 @@ body{
 
 .ul{
     position: relative;
-    top: 40px;
+    top: 5px;
     list-style-type: none;
     margin: 0%;
     padding: 0%;
@@ -23,4 +23,8 @@ body{
 
 .text{
     top: 30px;
+}
+
+.text2{
+    top:90px
 }
